@@ -171,7 +171,7 @@ public:
 
       auto await_resume() const noexcept
       {
-        return this_->attached_thread_->get_executor();
+        return this_->attached_thread_->get_executor(); // NOLINT
       }
     };
 
